@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Windell Dejeto — Data Analyst &amp; Industrial Engineer</title>
-<meta name="description" content="Portfolio of Windell L. Dejeto, Industrial Engineering undergraduate and data analyst specializing in KPI reporting, process analytics, and Lean Six Sigma.">
+<title>Windell Dejeto — Data Analyst, Virtual Assistant &amp; Community Support</title>
+<meta name="description" content="Portfolio of Windell L. Dejeto: Industrial Engineering undergraduate, Certified Data Analyst, virtual assistant, and community manager based in Cebu, Philippines.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -226,6 +226,24 @@ footer{
   .hero-grid{grid-template-columns:1fr;}
   .chart-panel{width:100%;margin-top:30px;}
 }
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.tab{font-family:var(--mono);font-size:13px;background:none;color:var(--muted);border:1px solid var(--line);padding:11px 18px;border-radius:2px;cursor:pointer;transition:all .2s;}
+.tab:hover{color:var(--text);border-color:var(--blue);}
+.tab:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+.tab.active{background:var(--blue);color:#0d1117;border-color:var(--blue);}
+.panel{border:1px solid var(--line);background:var(--surface);border-radius:2px;padding:36px;}
+.panel[hidden]{display:none;}
+.panel h3{font-size:24px;margin-bottom:18px;}
+.panel ul{list-style:none;display:grid;gap:12px;max-width:720px;}
+.panel li{color:var(--muted);padding-left:20px;position:relative;}
+.panel li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:1px;background:var(--amber);}
+.panel .work-tags{margin-top:24px;}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.skill-card{border:1px solid var(--line);background:var(--surface);border-radius:2px;padding:26px;}
+.skill-card h3{font-size:17px;margin-bottom:6px;}
+.skill-card .work-tags{margin-top:14px;}
+@media (max-width:900px){.skill-grid{grid-template-columns:1fr;}}
+@media (max-width:820px){.navcta{display:none;}.navlinks{display:flex;gap:16px;font-size:13px;overflow-x:auto;}.logo{display:none;}.panel{padding:24px;}}
 </style>
 </head>
 <body>
@@ -234,12 +252,12 @@ footer{
 
 <header>
   <nav>
-    <div class="logo"><b>WD</b> / Data &amp; Process Analytics</div>
+    <div class="logo"><b>WD</b> / Data · Admin · Community</div>
     <div class="navlinks">
       <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#expertise">Expertise</a>
       <a href="#experience">Experience</a>
-      <a href="#philosophy">Philosophy</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="#contact" class="navcta">Let's Talk</a>
@@ -251,10 +269,10 @@ footer{
     <div>
       <div class="eyebrow">Mandaue, Cebu, Philippines</div>
       <h1 class="hero-title">Windell<br><span class="line2">Dejeto</span></h1>
-      <div class="hero-role">Data Analyst / Industrial Engineer / Process Optimizer</div>
-      <p class="hero-desc">I turn operational data into decisions — KPI reporting, statistical performance analysis, and process improvement grounded in Lean Six Sigma and hands-on industrial engineering training.</p>
+      <div class="hero-role">Data Analyst / Virtual Assistant / Community Support</div>
+      <p class="hero-desc">I turn operational data into decisions, keep day-to-day work running smoothly, and help communities stay connected: analytics, administrative and IT support, and community management.</p>
       <div class="hero-cta">
-        <a href="#work" class="btn btn-primary">See Work</a>
+        <a href="#expertise" class="btn btn-primary">See What I Do</a>
         <a href="Windell_Dejeto_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Resume</a>
         <a href="#contact" class="btn btn-ghost">Contact</a>
       </div>
@@ -277,84 +295,74 @@ footer{
   <div class="wrap">
     <div class="section-head">
       <div class="section-num">01 / About</div>
-      <h2 class="section-title">Grounded in systems.<br>Focused on data.</h2>
+      <h2 class="section-title">Grounded in systems.<br>Focused on people and data.</h2>
     </div>
     <div class="about-grid">
       <div>
-        <p class="about-lead">I'm an Industrial Engineering undergraduate at Cebu Technological University, currently completing a thesis in quantitative process-performance analysis.</p>
-        <p>My work sits at the intersection of operations and analytics — pulling structure out of messy business data, building the KPI reports leadership actually uses, and applying Lean Six Sigma thinking to find where a process is losing time or money. I'm comfortable across Power BI, SQL, Python, and advanced Excel, and I like the discipline of a well-run process as much as the story a dataset can tell.</p>
+        <p class="about-lead">I'm an Industrial Engineering undergraduate with hands-on experience in business analytics, KPI reporting, and IT support.</p>
+        <p>I'm a Certified Data Analyst and Lean Six Sigma Yellow Belt, skilled in Power BI, SQL, Python, and advanced Excel. Outside analytics, I manage day-to-day engagement for the Web3 Cebu community and support technical and event work with ETH PH. I like the discipline of a well-run process as much as the story a dataset can tell.</p>
         <div class="focus-tags">
-          <span class="tag">KPI Reporting</span>
-          <span class="tag">Statistical Analysis</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Admin &amp; IT Support</span>
+          <span class="tag">Community Management</span>
           <span class="tag">Lean Six Sigma</span>
-          <span class="tag">Power BI / SQL / Python</span>
         </div>
         <div style="margin-top:26px;">
           <a href="Windell_Dejeto_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost" style="display:inline-block;">Download Resume (PDF)</a>
         </div>
       </div>
       <div class="about-side">
-        <div class="metric"><div class="num">3</div><div class="label">Roles across operations, analytics &amp; IT support</div></div>
-        <div class="metric"><div class="num">3 yrs</div><div class="label">Business data &amp; reporting at Hillsdale Marketing</div></div>
-        <div class="metric"><div class="num">CLSSWB</div><div class="label">Certified Lean Six Sigma White Belt</div></div>
+        <div class="metric"><div class="num">3 yrs</div><div class="label">Executive Assistant &amp; IT Support, Hillsdale Marketing</div></div>
+        <div class="metric"><div class="num">2023–Now</div><div class="label">Community Manager, Web3 Cebu</div></div>
+        <div class="metric"><div class="num">Yellow Belt</div><div class="label">Lean Six Sigma · Certified Data Analyst</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="work">
+<section id="expertise">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-num">02 / Work</div>
-      <h2 class="section-title">Analytics &amp; process work</h2>
+      <div class="section-num">02 / Expertise</div>
+      <h2 class="section-title">Three ways I work</h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Areas of expertise">
+      <button class="tab active" role="tab" aria-selected="true" aria-controls="p-data" id="t-data">Data Analyst</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-va" id="t-va">Virtual Assistant</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-comm" id="t-comm">Customer &amp; Community Support</button>
     </div>
 
-    <div class="work-item">
-      <div class="work-top">
-        <div>
-          <div class="work-org">WAV3 Marketing Inc. — OJT Internship</div>
-          <div class="work-title">KPI Tracking &amp; Business Performance Analysis</div>
-        </div>
-        <div class="work-period">Jun – Sep 2025</div>
-      </div>
-      <p class="work-desc">Analyzed daily operations data to identify bottlenecks and built recurring KPI reports consolidated into clear summaries, used directly in founder-level decision-making.</p>
-      <div class="work-tags"><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">Process Analysis</span></div>
+    <div class="panel" role="tabpanel" id="p-data" aria-labelledby="t-data">
+      <h3>I turn operational data into decisions.</h3>
+      <ul>
+        <li>Analyzed daily operations data at WAV3 Marketing to pinpoint bottlenecks and support process improvements recommended to the founders.</li>
+        <li>Built and maintained recurring KPI tracking reports used directly in leadership decision-making.</li>
+        <li>Work across Power BI, SQL (MySQL, PostgreSQL), Python (pandas, NumPy), Azure, and advanced Excel (Pivot Tables, Power Query, Macros).</li>
+        <li>Thesis focused on quantitative data analysis and process metrics for operational performance improvement.</li>
+      </ul>
+      <div class="work-tags"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Excel</span><span class="tag">KPI Reporting</span></div>
     </div>
 
-    <div class="work-item">
-      <div class="work-top">
-        <div>
-          <div class="work-org">Cebu Technological University — Thesis</div>
-          <div class="work-title">Quantitative Process-Performance Analysis</div>
-        </div>
-        <div class="work-period">2025 – Ongoing</div>
-      </div>
-      <p class="work-desc">Thesis research applying quantitative data analysis and process metrics to operational performance improvement, combining engineering data analysis with statistical methods.</p>
-      <div class="work-tags"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Statistical Analysis</span></div>
+    <div class="panel" role="tabpanel" id="p-va" aria-labelledby="t-va" hidden>
+      <h3>Reliable support that keeps work moving.</h3>
+      <ul>
+        <li>Three years as a part-time Executive Assistant at Hillsdale Marketing, monitoring and organizing sales data and keeping reporting records accurate.</li>
+        <li>Managed substantial volumes of business data with minimal errors.</li>
+        <li>Entered and validated construction project datasets at PLD Construction and Development, Inc., keeping project records reliable.</li>
+        <li>Comfortable with the MS Office Suite, Excel, and Adobe Suite for day-to-day documents, reports, and files.</li>
+      </ul>
+      <div class="work-tags"><span class="tag">Data Entry</span><span class="tag">Records &amp; Reporting</span><span class="tag">MS Office</span><span class="tag">IT Troubleshooting</span></div>
     </div>
 
-    <div class="work-item">
-      <div class="work-top">
-        <div>
-          <div class="work-org">Hillsdale Marketing — Part-Time</div>
-          <div class="work-title">Sales Data Monitoring &amp; Reporting</div>
-        </div>
-        <div class="work-period">2022 – 2025</div>
-      </div>
-      <p class="work-desc">Maintained three years of accurate sales reporting records supporting day-to-day operations, alongside organization-wide IT support and troubleshooting.</p>
-      <div class="work-tags"><span class="tag">Reporting</span><span class="tag">Data Integrity</span><span class="tag">IT Support</span></div>
-    </div>
-
-    <div class="work-item">
-      <div class="work-top">
-        <div>
-          <div class="work-org">PLD Construction and Development, Inc. — Internship</div>
-          <div class="work-title">Construction Dataset Validation</div>
-        </div>
-        <div class="work-period">Jun – Aug 2022</div>
-      </div>
-      <p class="work-desc">Entered and validated construction project datasets with a high degree of accuracy, ensuring reliable records for ongoing project tracking.</p>
-      <div class="work-tags"><span class="tag">Data Entry</span><span class="tag">Quality Control</span></div>
+    <div class="panel" role="tabpanel" id="p-comm" aria-labelledby="t-comm" hidden>
+      <h3>Keeping people informed, connected, and involved.</h3>
+      <ul>
+        <li>Community Manager at Web3 Cebu (2023 – Present): managing day-to-day engagement and coordinating activities and communication with organizers, members, and partners.</li>
+        <li>Social Media Manager for OurEnergy2030: managing social presence and community-facing content.</li>
+        <li>Technical Team at ETH PH (2025 – Present) and technical &amp; working team for Cebu's first blockchain conference (2024).</li>
+        <li>Provided consistent IT support and troubleshooting across the organization at Hillsdale Marketing for three years.</li>
+      </ul>
+      <div class="work-tags"><span class="tag">Community Management</span><span class="tag">Social Media</span><span class="tag">Event Support</span><span class="tag">Communication</span></div>
     </div>
   </div>
 </section>
@@ -363,76 +371,71 @@ footer{
   <div class="wrap">
     <div class="section-head">
       <div class="section-num">03 / Experience</div>
-      <h2 class="section-title">Work archive</h2>
+      <h2 class="section-title">Work &amp; community archive</h2>
     </div>
     <div class="timeline">
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div class="tl-period">Jun 2025 – Sep 2025</div>
-        <div class="tl-role">OJT Intern — Operations &amp; Business Analytics</div>
-        <div class="tl-org">WAV3 Marketing Inc.</div>
-        <p class="tl-desc">Analyzed business performance data across daily operations to pinpoint bottlenecks and supported process improvements recommended to the founders.</p>
+      <div class="tl-item"><span class="tl-dot"></span>
+        <div class="tl-period">2023 – Present</div>
+        <div class="tl-role">Community Manager</div>
+        <div class="tl-org">Web3 Cebu</div>
+        <p class="tl-desc">Manage day-to-day engagement with the community, keeping members informed, connected, and involved, and coordinate activities with organizers, members, and partners.</p>
       </div>
-      <div class="tl-item">
-        <span class="tl-dot"></span>
+      <div class="tl-item"><span class="tl-dot"></span>
+        <div class="tl-period">2025 – Present</div>
+        <div class="tl-role">Technical Team</div>
+        <div class="tl-org">ETH PH</div>
+        <p class="tl-desc">Support the technical team in community and event-related technical work.</p>
+      </div>
+      <div class="tl-item"><span class="tl-dot"></span>
+        <div class="tl-period">Jun 2025 – Sep 2025</div>
+        <div class="tl-role">OJT Intern, Operations &amp; Business Analytics</div>
+        <div class="tl-org">WAV3 Marketing Inc.</div>
+        <p class="tl-desc">Analyzed performance data to pinpoint bottlenecks and built recurring KPI reports used in leadership decision-making.</p>
+      </div>
+      <div class="tl-item"><span class="tl-dot"></span>
+        <div class="tl-period">2024</div>
+        <div class="tl-role">Technical &amp; Working Team</div>
+        <div class="tl-org">Cebu's First Blockchain Conference</div>
+        <p class="tl-desc">Part of the technical and working team that helped deliver Cebu's first blockchain conference.</p>
+      </div>
+      <div class="tl-item"><span class="tl-dot"></span>
+        <div class="tl-period">Community role</div>
+        <div class="tl-role">Social Media Manager</div>
+        <div class="tl-org">OurEnergy2030</div>
+        <p class="tl-desc">Manage social media presence and community-facing content.</p>
+      </div>
+      <div class="tl-item"><span class="tl-dot"></span>
         <div class="tl-period">Jan 2022 – Jun 2025</div>
         <div class="tl-role">Part-Time Executive Assistant &amp; IT Support</div>
         <div class="tl-org">Hillsdale Marketing</div>
-        <p class="tl-desc">Monitored and organized sales data over a three-year period while providing consistent IT support and troubleshooting across the organization.</p>
+        <p class="tl-desc">Monitored and organized sales data over three years and provided IT support and troubleshooting across the organization, with minimal errors.</p>
       </div>
-      <div class="tl-item">
-        <span class="tl-dot"></span>
+      <div class="tl-item"><span class="tl-dot"></span>
         <div class="tl-period">Jun 2022 – Aug 2022</div>
         <div class="tl-role">Data Encoder (Internship)</div>
         <div class="tl-org">PLD Construction and Development, Inc.</div>
-        <p class="tl-desc">Entered and validated construction project datasets, ensuring reliable records for ongoing project tracking.</p>
+        <p class="tl-desc">Entered and validated construction project datasets with a high degree of accuracy.</p>
       </div>
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div class="tl-period">2022 – Present</div>
-        <div class="tl-role">Member, PIIE CTU Student Chapter &amp; Web3 Cebu</div>
-        <div class="tl-org">Philippine Institute of Industrial Engineers / Web3 Cebu</div>
-        <p class="tl-desc">Active in the campus IE community and Cebu's broader tech ecosystem, staying connected to industry practice alongside coursework.</p>
+      <div class="tl-item"><span class="tl-dot"></span>
+        <div class="tl-period">2022 – 2026</div>
+        <div class="tl-role">BS Industrial Engineering, Undergraduate</div>
+        <div class="tl-org">Cebu Technological University – Main Campus</div>
+        <p class="tl-desc">Coursework in Operations Management, Business Process Analysis, and Engineering Data Analysis. Achieved ERP, Lean Six Sigma, and Data and Business Analytics.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="philosophy">
+<section id="skills">
   <div class="wrap">
     <div class="section-head">
-      <div class="section-num">04 / Philosophy</div>
-      <h2 class="section-title">How I approach the work</h2>
+      <div class="section-num">04 / Skills</div>
+      <h2 class="section-title">Tools &amp; strengths</h2>
     </div>
-    <div class="phi-list">
-      <div class="phi-item">
-        <div class="phi-num">01</div>
-        <div>
-          <div class="phi-title">Start with the process, not the dashboard.</div>
-          <p class="phi-desc">A chart is only useful if it points at where a process is actually losing time, quality, or money. I trace the number back to the operation before I trust it.</p>
-        </div>
-      </div>
-      <div class="phi-item">
-        <div class="phi-num">02</div>
-        <div>
-          <div class="phi-title">Make the report someone can act on.</div>
-          <p class="phi-desc">KPI reporting only matters if leadership can read it once and know what to do next. I'd rather cut a chart than leave one that just decorates a slide.</p>
-        </div>
-      </div>
-      <div class="phi-item">
-        <div class="phi-num">03</div>
-        <div>
-          <div class="phi-title">Bring engineering discipline to data work.</div>
-          <p class="phi-desc">Lean Six Sigma taught me to question variation before I explain it. I carry that same rigor into how I clean, validate, and interpret data.</p>
-        </div>
-      </div>
-      <div class="phi-item">
-        <div class="phi-num">04</div>
-        <div>
-          <div class="phi-title">Stay close to the tools that ship work.</div>
-          <p class="phi-desc">Power BI, SQL, Python, and Excel aren't ends in themselves — they're how analysis actually reaches the people who need to make a decision.</p>
-        </div>
-      </div>
+    <div class="skill-grid">
+      <div class="skill-card"><h3>Data &amp; Analytics</h3><div class="work-tags"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Python (pandas, NumPy)</span><span class="tag">Advanced Excel</span><span class="tag">Azure</span><span class="tag">KPI Reporting</span><span class="tag">Data Visualization</span><span class="tag">Performance Analysis</span></div></div>
+      <div class="skill-card"><h3>Engineering &amp; Process</h3><div class="work-tags"><span class="tag">Lean Six Sigma</span><span class="tag">Gantt Charts</span><span class="tag">Project Management</span><span class="tag">AutoCAD</span><span class="tag">Software Engineering</span></div></div>
+      <div class="skill-card"><h3>Other Tools &amp; Skills</h3><div class="work-tags"><span class="tag">UI/UX Research &amp; Design</span><span class="tag">Adobe Suite</span><span class="tag">MS Office Suite</span><span class="tag">Analytical Thinking</span><span class="tag">Problem-Solving</span><span class="tag">Communication</span></div></div>
     </div>
   </div>
 </section>
@@ -445,31 +448,19 @@ footer{
     </div>
     <div class="contact-grid">
       <div>
-        <p class="contact-big">Open to Data Analyst, Operations, and Reporting roles — and happy to walk through my work in more detail.</p>
+        <p class="contact-big">Open to Data Analyst, Virtual Assistant, and Community Support roles. Happy to walk through my work in more detail.</p>
         <div class="contact-list">
           <a href="mailto:windellldejeto@gmail.com"><span>Email</span> windellldejeto@gmail.com</a>
-          <a href="tel:+639881981855"><span>Phone</span> +63 988 198 1855</a>
+          <a href="tel:+639981981855"><span>Phone</span> +63 998 198 1855</a>
           <a href="#hero"><span>Location</span> Mandaue, Cebu, Philippines</a>
         </div>
       </div>
       <div>
         <form id="contact-form">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" required>
-          </div>
-          <div class="field">
-            <label for="subject">Subject</label>
-            <input id="subject" type="text">
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" required></textarea>
-          </div>
+          <div class="field"><label for="name">Name</label><input id="name" type="text" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" type="text"></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" required></textarea></div>
           <button type="submit" class="submit-btn">Send Message</button>
           <div class="form-note">This opens your email client with the message pre-filled, sent to windellldejeto@gmail.com.</div>
         </form>
@@ -481,9 +472,10 @@ footer{
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:12px;">
     <div>© 2026 Windell L. Dejeto</div>
-    <div>Mandaue, Cebu, Philippines · Data / Process / IE</div>
+    <div>Mandaue, Cebu, Philippines · Data / Admin / Community</div>
   </div>
 </footer>
+
 
 <script>
 // SPC control-chart draw animation
@@ -514,6 +506,17 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
   const message = document.getElementById('message').value;
   const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
   window.location.href = `mailto:windellldejeto@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+</script>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false');});
+    document.querySelectorAll('.panel').forEach(function(p){p.hidden=true;});
+    tab.classList.add('active');tab.setAttribute('aria-selected','true');
+    document.getElementById(tab.getAttribute('aria-controls')).hidden=false;
+  });
 });
 </script>
 
